@@ -1,0 +1,122 @@
+# Anchor
+.anchor
+target/
+test-ledger/
+
+# Rust
+Cargo.lock
+**/target/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Solana
+keypairs/
+*.so
+*.json.bak
+
+# Logs
+logs
+*.log
+
+# Build artifacts
+dist/
+build/
+
+# Test artifacts
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+
+# Lock files (keep one, remove others if using different package manager)
+package-lock.json
+# yarn.lock
+# bun.lock 
+node_modules/
+
+scripts/
+utils/
+types/
+wallets/
+
+wallet.json
+wallet_mint.json
+
+derive-state.js
+deploy.sh
+up.sh
+up2.sh
+transfer_sol.sh
+vault-metadata.json
+wallet_generation.js
+Anchor.toml
+programs/airdrop

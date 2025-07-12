@@ -1,0 +1,34 @@
+name: Build and Deploy
+
+# Disabled - using local bash scripts instead
+on:
+  workflow_dispatch: # Manual trigger only (disabled in job)
+  # push:
+  #   branches: [main, master]
+  # pull_request:
+  #   branches: [main, master]
+
+# WORKFLOW DISABLED - Use local deployment scripts instead:
+# ./deploy.sh                               # Interactive deployment
+# ./scripts/deploy/full-deployment.sh      # Automated deployment
+# ./scripts/deploy/validate-deployment.sh  # Environment validation
+
+env:
+  SOLANA_VERSION: "1.18.15"
+  NODE_VERSION: "18.x"
+  ANCHOR_VERSION: "0.29.0"
+  MAX_PROGRAM_SIZE: "500000"
+  COMPUTE_UNIT_PRICE: "1000"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    if: false # This job will never run
+    steps:
+      - name: Workflow Disabled
+        run: |
+          echo "❌ This workflow has been disabled"
+          echo "🚀 Use local deployment scripts instead:"
+          echo "   ./deploy.sh"
+          echo "   ./scripts/deploy/full-deployment.sh"
+          exit 1

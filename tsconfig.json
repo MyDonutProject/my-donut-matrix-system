@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@scripts/*": ["./scripts/*"],
+      "@utils/*": ["./utils/*"]
+    },
+    "types": ["node", "mocha", "chai"],
+    "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  "include": ["scripts/**/*", "src/**/*", "tests/**/*", "types/**/*"],
+  "exclude": ["node_modules", "target", "dist", ".anchor"]
+}
